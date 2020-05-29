@@ -1,1 +1,242 @@
-Hello World
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=5.4.1">
+    <title>Atividade 6</title>
+</head>
+
+<body>
+    <!--
+        div= torna possível a edição do layout em blocos, ou seja, torna fácil a edição do bloco em um todo um um stylesheet.
+        a = torna possível que o conteúdo dentro do bloco seja clicável para um link desejado
+        img = mostra uma imagem do computador ou da internet.
+     -->
+    <div class="blocosuperior">
+        <div class="logo">
+        <a href="Atividade 6.html"> <!-- href= a página em que o navegador deseja abrir, sendo local ou da internet. -->
+            <img src="https://bucket-gw-cni-static-cms-si.s3.amazonaws.com/media/uploads/logotipos/logo-senai.png">
+        </a> <!-- src = atributo do img que recebe o endereço da imagem -->
+    </div>
+    </div>
+
+    
+    <div class="blocoprincipal">
+            <div class="titulos">
+                <h1>Inscrição Blog Senai</h1> <!-- Título-->
+              <h2>Inscreva-se nos cursos do <span>Senai</span> durante a pandemia!</h2>
+        <!-- h2 = Subtítulo, span = adiciona o estilo especificamente ao texto dentro da função -->
+            <div class="requisitos">
+            <h3 style="padding-left: 7%;padding-top: 2em; ">1. Pré-Requisitos</h3>
+            <!-- style = configura a formatação e estilo sobre a função. -->
+            <h4 style="padding-top: 1em;margin-left: 7%;">Para se inscrever, o candidato <span>deverá:</span></h4>
+        <div class="requisitos _lista" style="margin-left: 7%;">
+            <ul><!-- ul = cria uma lista não ordenada -->
+                <li>Possuir o certificado de <span>conclusão do ensino fundamental</span>.</li>
+                <!-- li = adiciona uma coluna à lista -->
+                <li>Idade mínima de <span>18 (dezoito) anos.</span></li>
+            </ul>
+        </div>
+
+        <div class="cursos" style="padding-top: 1em;margin-left: 7%;">
+            <h3>2. Cursos disponíveis</h3>
+                <h4>Os cursos disponíveis são:</h4>
+        </div>
+
+        <div class="cursos_tabela" style="margin-left: 10%;margin-right: 10%;">
+            <table> <!-- cria uma tabela -->
+              <tbody><tr> <!-- tbody = cria o corpo da tabela, tr = adiciona uma coluna -->
+                <th>Curso</th>
+                <th>Dificuldade</th>
+                <th>Qt. Vagas</th>
+              </tr>
+              <tr>
+                <td>Assistente Administrativo e de Controle de Qualidade</td>
+                <td>Iniciante</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>Instalador e Reparador de Redes de Computadores</td>
+                <td>Iniciante</td>
+                <td>27</td>
+              </tr>
+              <tr>
+                <td>WebDesign</td>
+                <td>Iniciante</td>
+                <td>24</td>
+              </tr>
+              <tr>
+                <td>Desenhista de Moda</td>
+                <td>Intermediário</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>Desenhista de Construção Civil</td>
+                <td>Avançado</td>
+                <td>29</td>
+              </tr>
+              <tr>
+                <td>Eletricista de Redes de Distribuição de Energia Elétrica</td>
+                <td>Avançado</td>
+                <td>25</td>
+              </tr>
+            </tbody></table>
+        </div>
+
+        <div class="formulario_titulo" style="margin-left: 7%;padding-top: 2em;">
+            <h3>3. Dados Pessoais</h3>
+                <h4>Digite os seus dados pessoais:</h4>
+        </div>
+
+        <div class="formulario" style="margin-left: 10%;padding-left: 0px;margin-right: 10%;">
+            <form name="formulario" method="post" accept-charset="UTF-8">
+                <!-- form = cria um formulário -->
+
+                <label for="nome">Nome completo:</label><br> <!-- adiciona descrição à entrada -->
+                <input id="nome" name="nome" type="text" accept="text/plain"><br> <!-- entrada de texto -->
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="CPF">CPF</label><br>
+                <input id="cpf" name="cpf" type="text"><br>
+
+                <label for="curso">Selecione o curso em que você deseja se inscrever:</label><br>
+                <select id="curso" name="curso"> <!-- cria um botão com opções -->
+                    <option value="aacq">Assistente Administrativo e de Controle de Qualidade</option>
+                    <!-- option = opções do botão com opções  -->
+                    <option value="irrc">Instalador e Reparador de Redes de Computadores</option>
+                    <option value="wdgn">Desenhista de produtos gráficos(WebDesign)</option>
+                    <option value="dmod">Desenhista de Moda</option>
+                    <option value="dcci">Desenhista de Construção Civil</option>
+                    <option value="erde">Eletricista de Redes de Distribuição de Energia Elétrica</option>
+                </select><br>
+
+                <input type="submit" value="Enviar"> <!-- cria um butão para envio do formulário -->
+            </form>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="blocodireito">
+            <div class="links_titulo">
+            <h3>Links</h3>
+                <h4>A seguir, links da plataforma Senai</h4>
+            </div>
+
+            <div class="links">
+            <ol> <!-- cria uma lista ordenada -->
+                <li><a href="https://www.mundosenai.com.br/">Mundo Senai<br><img class="contrateinvert" src="https://loja.mundosenai.com.br/pub/static/version1590635102/frontend/Exablack/dn-theme/pt_BR/images/mundo-senai-header.png"></a></li>
+                <li><a href="http://www.ap.senai.br/">Senai Amapá<br><img style="width: 80%;" src="https://meusenai.azureedge.net/uploads/marca/d4185523a38d3922031a39bd2a836b98.jpeg"></a></li>
+                <li><a href="https://contrate-me.mybluemix.net/">Contrate-me<br><img class="contrateinvert" src="https://contrate-me.mybluemix.net/assets/logo-senai.png"></a></li>
+                <li><a href="https://loja.mundosenai.com.br/senainacional/">Senai EAD<br><img class="imagemfix" src="https://i.imgur.com/Z7ioNSC.png"></a></li>
+                <li><a href="https://meusenai.senai.br/">Meu Senai<br><img style="width: 80%;" src="https://meusenai.azureedge.net/img/misc/logo-meusenai.png"></a></li>
+            </ol></div>
+
+        <div class="redessociais">
+            <div class="redestitlulos">
+                <h3>Redes Sociais</h3>
+            </div>
+            <div class="social-bar-int">
+            <ul class="nav nav-pills social-bar-senai img-circle">
+<li class="facebook"><a href="https://www.facebook.com/SENAIamapa/" target="_blank" rel="noopener noreferrer"><span style="  
+" class="fa fa-facebook"></span></a></li>
+                
+                    
+
+<li class="twitter"><a href="https://twitter.com/SENAIAmapa" target="_blank" rel="noopener noreferrer"><span class="fa fa-twitter"></span></a></li>
+                
+                    
+
+<li class="youtube"><a href="https://www.youtube.com/user/senaibr" target="_blank" rel="noopener noreferrer"><span class="fa fa-youtube"></span></a> </li>
+                
+                    
+
+<li class="instagram"><a href="https://www.instagram.com/senai_nacional/" target="_blank" rel="noopener noreferrer"><span class="fa fa-instagram"></span></a></li>
+                
+                    
+
+<li class="spotify"><a href="https://play.spotify.com/user/senainacional" target="_blank" rel="noopener noreferrer"><span class="fa fa-spotify"></span></a></li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+        
+
+    
+
+
+<!-- style = configura o estilo da página para cada função -->
+<style>
+    body{
+        font-family: arial, sans-serif;
+        background-image: url("https://i.imgur.com/H3fQbu0.png")
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+
+
+    .titulos {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+    .requisitos {
+        margin-left: 7%;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    label {
+    }
+
+    input {
+        margin-top: 6px;
+        margin-bottom: 7px;
+    }
+
+    select {
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
+    .links{
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-top: 4%;
+    }
+
+    .links_titulo{
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+    li {
+
+    padding-bottom: 17px;
+    }
+</style>
+
+</body></html>
