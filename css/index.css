@@ -1,0 +1,52 @@
+.blocosuperior {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  background-color: ghostwhite;
+  height: 82px;
+}
+
+.logo a img {
+        display: flex;
+        margin: auto;
+        width: 200px;
+    }
+
+.blocoprincipal {
+  
+  float: left;
+  display: flex;
+  width: 70%;
+}
+
+.blocodireito {
+  width: 30%;
+  float: right;
+  border-left: black dashed 2px;
+  border-bottom: black dashed 2px;
+  background-color: beige;
+}
+
+.contrateinvert {
+  -webkit-filter: invert(1);
+   filter: invert(1);
+  width: 80%;
+}
+
+.imagemfix {
+  width: 80%;
+}
+
+.redessociais {
+  
+  width: max-content;
+  margin: auto;
+}
+
+.redessociais a {
+  font-size: 28px
+}
+
+.redessociais h3 {
+  
+  padding-left: 10px;
+}
